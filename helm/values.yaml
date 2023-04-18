@@ -1,0 +1,16 @@
+frontend:
+  image: kevinstudy/frontend
+  tag: '2637938'
+  autoscaling:
+    averageUtilization: 90
+backend:
+  image: kevinstudy/backend
+  tag: '2637938'
+  autoscaling:
+    averageUtilization: 90
+database:
+  enabled: true
+  uri: pg-service
+  username: postgres
+  password: postgres
+  
